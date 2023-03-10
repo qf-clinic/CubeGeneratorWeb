@@ -9,8 +9,8 @@ pipeline {
         stage('Build') {
             steps {
               
-                git branch: 'main', url: 'https://github.com/qf-clinic/my-app.git'
-
+                //git branch: 'main', url: 'https://github.com/qf-clinic/my-app.git'
+                 checkout scm
               
                 sh "mvn -Dmaven.test.failure.ignore=true clean package"
 
