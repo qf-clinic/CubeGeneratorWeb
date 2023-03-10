@@ -1,0 +1,47 @@
+176  mvn archetype:generate -DgroupId=com.javatpoint -DartifactId=CubeGeneratorWeb -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+  177  tree CubeGeneratorWeb/
+  178  cd CubeGeneratorWeb/
+  179  cat pom.xml 
+  180  pwd
+  181  mvn clean package
+  182  cd target/
+  183  ls -lrt
+  184  cd ..
+  185  git init
+  186  git commit -m "web app"
+  187  git add .
+  188  git commit -m "web app"
+  189  git remote add origin git@github.com:qf-clinic/CubeGeneratorWeb.git
+  190  git push 
+  191  git branch -M main
+  192  git push origin main
+  193  clear
+  194  ls -lrt
+  195  cd target/
+  196  ls -rlt
+  197  java -jar CubeGeneratorWeb.war 
+  198  apt install tomcat
+  199  sudo apt install tomcat
+  200  apt update
+  201  cd
+  202  wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.73/bin/apache-tomcat-9.0.73.tar.gz
+  203  ls -lrt
+  204  tar -xvf apache-tomcat-9.0.73.tar.gz 
+  205  ls -lrt
+  206  ln -s apache-tomcat-9.0.73 tomcat
+  207  ls -lrt
+  208  cd tomcat
+  209  ls -lrt
+  210  cd webapps/
+  211  ls -lrt
+  212  cd ..
+  213  ls -lrt
+  214  cd bin/
+  215  ls -lrt
+  216  ./startup.sh 
+  217  ps -ef|grep java
+  218  cd ../webapps/
+  219  ls -lrt
+  220  cp ../../CubeGeneratorWeb/target/CubeGeneratorWeb.war .
+  221  ls -lrt
+  222  history
