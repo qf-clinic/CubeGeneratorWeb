@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'remote-label' }
+    agent { label 'maven-label' }
 
     tools {
         maven "maven-3.6.2"
